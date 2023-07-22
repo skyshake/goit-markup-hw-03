@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
     <!-- CSS NORMALIZE -->
     <link
       rel="stylesheet"
@@ -21,35 +24,37 @@
   </head>
 
   <body>
-    <!--HHEADER -->
+    <!--HEADER -->
     <header class="page-header">
       <!--Navigation Bar-->
-      <div class="container header-container">
-        <nav class="header-navigation">
+      <div class="container menu">
+        <nav class="navigation">
           <a class="logo-link" href="index.html">
             <span class="logo">WEB</span><span class="studio">STUDIO</span>
           </a>
           <ul class="nav-menu list">
-            <li>
-              <a class="page current" href="index.html">Studio</a>
+            <li class="item">
+              <a class="page current link" href="index.html">Studio</a>
             </li>
-            <li>
-              <a class="page" href="portfolio.html">Portfolio</a>
+            <li class="item">
+              <a class="page link" href="portfolio.html">Portfolio</a>
             </li>
-            <li>
-              <a class="page" href="#">Contacts</a>
+            <li class="item">
+              <a class="page link" href="#">Contacts</a>
             </li>
           </ul>
         </nav>
 
         <ul class="contacts-menu list">
-          <li>
-            <a class="item" href="mailto:info@devstudio.com"
+          <li class="item">
+            <a class="contact link" href="mailto:info@devstudio.com"
               >info@devstudio.com</a
             >
           </li>
-          <li>
-            <a class="item" href="tel:+110001111111">+11 (000) 111-11-11</a>
+          <li class="item">
+            <a class="contact link" href="tel:+110001111111"
+              >+11 (000) 111-11-11</a
+            >
           </li>
         </ul>
       </div>
@@ -58,152 +63,173 @@
     <!--MAIN BODY-->
     <main>
       <!--BUTTONS SECTION-->
-      <section>
-        <div class="container buttons">
+      <section class="section">
+        <div class="container">
           <ul class="filters list">
-            <li>
+            <li class="space">
               <button class="button filter current" type="button">All</button>
             </li>
-            <li>
+            <li class="space">
               <button class="button filter" type="button">Web Site</button>
             </li>
-            <li>
+            <li class="space">
               <button class="button filter" type="button">App</button>
             </li>
-            <li>
+            <li class="space">
               <button class="button filter" type="button">Design</button>
             </li>
-            <li>
+            <li class="space">
               <button class="button filter" type="button">Marketing</button>
+            </li>
+          </ul>
+
+          <!--PROJECT CONTENT SECTION-->
+
+          <ul class="project list">
+            <li class="project-card">
+              <a href="" class="project link">
+                <img
+                  src="./images/portfolio/row1-projectcard-1.jpg"
+                  alt="Banking App"
+                  width="360"
+                  height="300"
+                  class="image"
+                />
+                <div class="substrate">
+                  <h2 class="name">Banking App Interface Concept</h2>
+                  <p class="type">App</p>
+                </div>
+              </a>
+            </li>
+            <li class="project-card">
+              <a href="" class="project link">
+                <img
+                  src="./images/portfolio/row1-projectcard-2.jpg"
+                  alt="Mobile"
+                  width="360"
+                  height="300"
+                  class="image"
+                />
+                <div class="substrate">
+                  <h2 class="name">Cashless Payment</h2>
+                  <p class="type">Marketing</p>
+                </div>
+              </a>
+            </li>
+            <li class="project-card">
+              <a href="" class="project link">
+                <img
+                  src="./images/portfolio/row1-projectcard-3.jpg"
+                  alt="laptop and mobile"
+                  width="360"
+                  height="300"
+                  class="image"
+                />
+                <div class="substrate">
+                  <h2 class="name">Meditation App</h2>
+                  <p class="type">App</p>
+                </div>
+              </a>
+            </li>
+            <li class="project-card">
+              <a href="" class="project link">
+                <img
+                  src="./images/portfolio/row2-projectcard-1.jpg"
+                  alt="Taxi"
+                  width="360"
+                  height="300"
+                  class="image"
+                />
+                <div class="substrate">
+                  <h2 class="name">Taxi Service</h2>
+                  <p class="type">Marketing</p>
+                </div>
+              </a>
+            </li>
+            <li class="project-card">
+              <a href="" class="project link">
+                <img
+                  src="./images/portfolio/row2-projectcard-2.jpg"
+                  alt="Mobile Screen Design"
+                  width="360"
+                  height="300"
+                  class="image"
+                />
+                <div class="substrate">
+                  <h2 class="name">Screen Illustrations</h2>
+                  <p class="type">Design</p>
+                </div>
+              </a>
+            </li>
+            <li class="project-card">
+              <a href="" class="project link">
+                <img
+                  src="./images/portfolio/row2-projectcard-3.jpg"
+                  alt="Lady with Mobile"
+                  width="360"
+                  height="300"
+                  class="image"
+                />
+                <div class="substrate">
+                  <h2 class="name">Online Courses</h2>
+                  <p class="type">Marketing</p>
+                </div>
+              </a>
+            </li>
+            <li class="project-card">
+              <a href="" class="project link">
+                <img
+                  src="./images/portfolio/row3-projectcard-1.jpg"
+                  alt="Story Designs"
+                  width="360"
+                  height="300"
+                  class="image"
+                />
+                <div class="substrate">
+                  <h2 class="name">Instagram Stories Concept</h2>
+                  <p class="type">Design</p>
+                </div>
+              </a>
+            </li>
+            <li class="project-card">
+              <a href="" class="project link">
+                <img
+                  src="./images/portfolio/row3-projectcard-2.jpg"
+                  alt="Fruits and Veggies"
+                  width="360"
+                  height="300"
+                  class="image"
+                />
+                <div class="substrate">
+                  <h2 class="name">Organic Food</h2>
+                  <p class="type">Web Site</p>
+                </div>
+              </a>
+            </li>
+            <li class="project-card">
+              <a href="" class="project link">
+                <img
+                  src="./images/portfolio/row3-projectcard-3.jpg"
+                  alt="Cup of Coffee"
+                  width="360"
+                  height="300"
+                  class="image"
+                />
+                <div class="substrate">
+                  <h2 class="name">Fresh Coffee</h2>
+                  <p class="type">Web Site</p>
+                </div>
+              </a>
             </li>
           </ul>
         </div>
       </section>
-
-      <!--PROJECT CONTENT SECTION-->
-
-      <ul class="projects list">
-        <div class="container project">
-          <li>
-            <a href="" class="project">
-              <img
-                src="./images/portfolio/row1-projectcard-1.jpg"
-                alt="Banking App"
-                width="360"
-                height="300"
-              />
-              <h2 class="name">Banking App Interface Concept</h2>
-              <p class="type">App</p>
-            </a>
-          </li>
-          <li>
-            <a href="" class="project">
-              <img
-                src="./images/portfolio/row1-projectcard-2.jpg"
-                alt="Mobile"
-                width="360"
-                height="300"
-              />
-              <h2 class="name">Cashless Payment</h2>
-              <p class="type">Marketing</p>
-            </a>
-          </li>
-          <li>
-            <a href="" class="project">
-              <img
-                src="./images/portfolio/row1-projectcard-3.jpg"
-                alt="laptop and mobile"
-                width="360"
-                height="300"
-              />
-              <h2 class="name">Meditation App</h2>
-              <p class="type">App</p>
-            </a>
-          </li>
-        </div>
-        <div class="container project">
-          <li>
-            <a href="" class="project">
-              <img
-                src="./images/portfolio/row2-projectcard-1.jpg"
-                alt="Taxi"
-                width="360"
-                height="300"
-              />
-              <h2 class="name">Taxi Service</h2>
-              <p class="type">Marketing</p>
-            </a>
-          </li>
-          <li>
-            <a href="" class="project">
-              <img
-                src="./images/portfolio/row2-projectcard-2.jpg"
-                alt="Mobile Screen Design"
-                width="360"
-                height="300"
-              />
-              <h2 class="name">Screen Illustrations</h2>
-              <p class="type">Design</p>
-            </a>
-          </li>
-          <li>
-            <a href="" class="project">
-              <img
-                src="./images/portfolio/row2-projectcard-3.jpg"
-                alt="Lady with Mobile"
-                width="360"
-                height="300"
-              />
-              <h2 class="name">Online Courses</h2>
-              <p class="type">Marketing</p>
-            </a>
-          </li>
-        </div>
-        <div class="container project">
-          <li>
-            <a href="" class="project">
-              <img
-                src="./images/portfolio/row3-projectcard-1.jpg"
-                alt="Story Designs"
-                width="360"
-                height="300"
-              />
-              <h2 class="name">Instagram Stories Concept Design</h2>
-              <p class="type">Design</p>
-            </a>
-          </li>
-          <li>
-            <a href="" class="project">
-              <img
-                src="./images/portfolio/row3-projectcard-2.jpg"
-                alt="Fruits and Veggies"
-                width="360"
-                height="300"
-              />
-              <h2 class="name">Organic Food</h2>
-              <p class="type">Web Site</p>
-            </a>
-          </li>
-          <li>
-            <a href="" class="project">
-              <img
-                src="./images/portfolio/row3-projectcard-3.jpg"
-                alt="Cup of Coffee"
-                width="360"
-                height="300"
-              />
-              <h2 class="name">Fresh Coffee</h2>
-              <p class="type">Web Site</p>
-            </a>
-          </li>
-        </div>
-      </ul>
     </main>
 
     <!--FOOTER-->
     <footer class="page-footer bg-footer">
-      <div class="footer-container">
-        <a class="logo-link" href="index.html">
+      <div class="container">
+        <a class="logo-link footer" href="index.html">
           <span class="logo">WEB</span><span class="studio-2">STUDIO</span>
         </a>
         <p class="footer-description">

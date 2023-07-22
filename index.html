@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Studio</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
     <!-- CSS NORMALIZE -->
     <link
       rel="stylesheet"
@@ -23,32 +26,34 @@
     <!--HEADER -->
     <header class="page-header">
       <!--Navigation Bar-->
-      <div class="container header-container">
-        <nav class="header-navigation">
+      <div class="container menu">
+        <nav class="navigation">
           <a class="logo-link" href="index.html">
             <span class="logo">WEB</span><span class="studio">STUDIO</span>
           </a>
           <ul class="nav-menu list">
-            <li>
-              <a class="page current" href="index.html">Studio</a>
+            <li class="item">
+              <a class="page current link" href="index.html">Studio</a>
             </li>
-            <li>
-              <a class="page" href="portfolio.html">Portfolio</a>
+            <li class="item">
+              <a class="page link" href="portfolio.html">Portfolio</a>
             </li>
-            <li>
-              <a class="page" href="#">Contacts</a>
+            <li class="item">
+              <a class="page link" href="#">Contacts</a>
             </li>
           </ul>
         </nav>
 
         <ul class="contacts-menu list">
-          <li>
-            <a class="item" href="mailto:info@devstudio.com"
+          <li class="item">
+            <a class="contact link" href="mailto:info@devstudio.com"
               >info@devstudio.com</a
             >
           </li>
-          <li>
-            <a class="item" href="tel:+110001111111">+11 (000) 111-11-11</a>
+          <li class="item">
+            <a class="contact link" href="tel:+110001111111"
+              >+11 (000) 111-11-11</a
+            >
           </li>
         </ul>
       </div>
@@ -57,8 +62,8 @@
     <!--MAIN BODY-->
     <main>
       <!-- HERO -->
-      <section class="section hero bg-hero">
-        <div class="container bg-hero-title">
+      <section class="hero bg-hero">
+        <div class="container">
           <h1 class="hero-title">
             Effective Solutions <br />for Your Business
           </h1>
@@ -70,7 +75,7 @@
       <section class="section">
         <div class="container">
           <ul class="benefits list">
-            <li>
+            <li class="item">
               <h3 class="title">Strategy</h3>
               <p class="description">
                 Our goal is to identify the business<br />
@@ -78,7 +83,7 @@
                 perfect and creative solution.
               </p>
             </li>
-            <li>
+            <li class="item">
               <h3 class="title">Punctuality</h3>
               <p class="description">
                 Bring the key message to the<br />
@@ -86,7 +91,7 @@
                 within the shortest possible time.
               </p>
             </li>
-            <li>
+            <li class="item">
               <h3 class="title">Diligence</h3>
               <p class="description">
                 Research and confirm brands that <br />present the strongest
@@ -94,7 +99,7 @@
                 opportunities and minimize risk.
               </p>
             </li>
-            <li>
+            <li class="item">
               <h3 class="title">Technologies</h3>
               <p class="description">
                 Design practice focused on digital<br />
@@ -107,32 +112,35 @@
       </section>
 
       <!--WHAT WE DO SECTION -->
-      <section class="section">
-        <div class="container section-title">
+      <section class="section no-top-padding">
+        <div class="container">
           <h2 class="section-title">What Are We Doing</h2>
           <ul class="what-we-do list">
-            <li>
+            <li class="item">
               <img
                 src="images/hw1/monitor.jpg"
                 alt="monitor"
                 width="360"
                 height="300"
+                class="image"
               />
             </li>
-            <li>
+            <li class="item">
               <img
                 src="images/hw1/mobile.jpg"
                 alt="mobile"
                 width="360"
                 height="300"
+                class="image"
               />
             </li>
-            <li>
+            <li class="item">
               <img
                 src="images/hw1/laptop.jpg"
                 alt="laptop"
                 width="360"
                 height="300"
+                class="image"
               />
             </li>
           </ul>
@@ -141,45 +149,49 @@
 
       <!--TEAM SECTION-->
       <section class="section bg-team">
-        <div class="container section-title">
+        <div class="container">
           <h2 class="section-title">Our Team</h2>
           <ul class="team list">
-            <li>
+            <li class="item">
               <img
                 src="images/hw1/mark-guerrero.jpg"
                 alt="Mark Guerrero"
-                width="264"
+                width="270"
                 height="260"
+                class="image"
               />
               <h3 class="name">Mark Guerrero</h3>
               <p class="position">Product Designer</p>
             </li>
-            <li>
+            <li class="item">
               <img
                 src="images/hw1/tom-ford.jpg"
                 alt="Tom Ford"
-                width="264"
+                width="270"
                 height="260"
+                class="image"
               />
               <h3 class="name">Tom Ford</h3>
               <p class="position">Frontend Developer</p>
             </li>
-            <li>
+            <li class="item">
               <img
                 src="images/hw1/camila-garcia.jpg"
                 alt="Camila Garcia"
-                width="264"
+                width="270"
                 height="260"
+                class="image"
               />
               <h3 class="name">Camila Garcia</h3>
               <p class="position">Marketing</p>
             </li>
-            <li>
+            <li class="item">
               <img
                 src="images/hw1/daniel-wilson.jpg"
                 alt="Daniel Wilson"
-                width="264"
+                width="270"
                 height="260"
+                class="image"
               />
               <h3 class="name">Daniel Wilson</h3>
               <p class="position">UI Designer</p>
@@ -191,8 +203,8 @@
 
     <!--FOOTER-->
     <footer class="page-footer bg-footer">
-      <div class="footer-container">
-        <a class="logo-link" href="index.html">
+      <div class="container">
+        <a class="logo-link footer" href="index.html">
           <span class="logo">WEB</span><span class="studio-2">STUDIO</span>
         </a>
         <p class="footer-description">

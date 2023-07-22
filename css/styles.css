@@ -8,6 +8,9 @@
   --slate: #434455;
   --white: #fff;
   --rgb: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  --box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
 /* CSS RESET */
@@ -41,8 +44,6 @@ body {
 
 /* general styles */
 .container {
-  display: flex;
-  align-items: center;
   width: 1440px;
 }
 
@@ -51,12 +52,11 @@ body {
   padding-bottom: 120px;
 }
 
-.section-title {
-  display: block;
-}
-
 .list {
   list-style: none;
+}
+.link {
+  text-decoration: none;
 }
 
 /* LOGO */
@@ -79,33 +79,37 @@ body {
 /* HEADER */
 /* HEADER block-model flexbox */
 
-.header-container {
-  display: flex;
-  align-items: center;
+.menu {
   border-bottom: 1px solid var(--cornflower);
+  display: flex;
+  justify-content: center;
 }
 
-.header-navigation {
+.navigation {
   display: flex;
   align-items: center;
 }
 
-.nav-menu {
+.nav-menu.list {
   display: flex;
   gap: 40px;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .logo-link {
-  padding: 24px;
-  padding-left: 156px;
+  padding-right: 76px;
+  padding-top: 25.5px;
+  padding-bottom: 25.5px;
+  display: flex;
 }
 
 .contacts-menu {
   display: flex;
-  align-items: end;
-  justify-content: end;
   gap: 30px;
   padding-left: 347px;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 /* HEADER color text fonts */
@@ -120,12 +124,12 @@ body {
 
 .nav-menu .page:hover,
 .nav-menu .page:focus,
-.contacts-menu .item:hover,
-.contacts-menu .item:focus {
+.contacts-menu .link:hover,
+.contacts-menu .link:focus {
   color: var(--iris);
 }
 
-.contacts-menu .item {
+.contacts-menu .link {
   color: var(--slate);
   text-decoration: none;
   font-weight: 400;
@@ -135,14 +139,8 @@ body {
 
 /* HERO */
 /* HERO block model flex box */
-
-.bg-hero {
-  width: 1440px;
-}
-.bg-hero-title {
-  display: block;
-  align-items: center;
-  height: 600px;
+.hero .container {
+  display: inline-block;
   padding-top: 188px;
   padding-bottom: 292px;
 }
@@ -150,11 +148,15 @@ body {
 .hero-title {
   padding-bottom: 42px;
 }
+
+.hero {
+  width: 1440px;
+}
+
 .button.primary {
-  display: block;
-  justify-content: center;
-  margin: 0 auto;
+  display: flex;
   padding: 16px 32px;
+  margin: 0 auto;
 }
 
 /* HERO color text fonts */
@@ -215,13 +217,15 @@ body {
 
 /* What We Do Section */
 /* block-model flexbox */
+.no-top-padding {
+  padding-top: 0;
+}
 
 .what-we-do.list {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 24px;
-  padding-top: 72px;
 }
 
 /* color text fonts */
@@ -234,12 +238,33 @@ body {
 
 /* Team Section */
 /* Team block-model flexbox */
-
 .team.list {
   display: flex;
-  justify-content: center;
-  padding: 156px;
-  gap: 24px;
+  flex-wrap: wrap;
+  margin-top: 24px;
+  margin-left: 156px;
+  gap: 32px;
+}
+
+.team .item {
+  border-radius: 0px 0px 4px 4px;
+  background: var(--white);
+  box-shadow: var(--box-shadow);
+  flex-direction: column;
+  padding-bottom: 0px;
+}
+
+.team .name {
+  margin-top: 32px;
+  margin-bottom: 8px;
+}
+
+.team .position {
+  margin-bottom: 32px;
+}
+
+.section .section-title {
+  margin-bottom: 72px;
 }
 
 .bg-team {
@@ -270,18 +295,17 @@ body {
 /* Buttons Sections */
 /* Buttons block-model flexbox */
 
-.buttons {
-  justify-content: center;
-}
-
-.filters.list {
+.filters {
   display: flex;
+  align-items: flex-start;
+  justify-content: center;
   gap: 24px;
+}
+.filters .button.filter {
   padding: 12px 24px;
 }
-
-.button.filter {
-  border: 1px solid var(--cornflower);
+.filters .space {
+  padding-bottom: 72px;
 }
 
 /* Button color text font */
@@ -317,24 +341,21 @@ body {
 
 /* Project Content Section */
 /* Project model-block flexbox */
-
-.container.project {
-  justify-content: center;
-  padding-bottom: 32px;
-  gap: 24px;
-}
-
-.type {
-  border-bottom: 1px solid var(--cornflower);
-  padding-bottom: 32px;
-}
-
-.name {
-  padding-top: 32px;
-}
-
 .project {
-  padding-bottom: 32px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 56px;
+}
+
+.project-card {
+  border-bottom: 120px;
+  margin-bottom: 32px;
+  flex-basis: 380px;
+}
+
+.project-card .substrate {
+  margin-top: 32px;
+  margin-bottom: 32px;
 }
 
 /* Project color text font */
@@ -353,17 +374,16 @@ body {
   line-height: 1.87;
 }
 
-.project {
-  text-decoration: none;
-}
-
 /* Footer*/
 /* Footer block-model flexbox */
 
-.footer-container {
+.page-footer .container {
   display: block;
   align-content: center;
   padding-top: 105.1px;
+}
+.footer {
+  padding-left: 156px;
 }
 
 .footer-description {
